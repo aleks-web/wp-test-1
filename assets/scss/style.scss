@@ -1,4 +1,8 @@
 @import "bootstrap/style.scss";
-@import "var";
+@import "bem-blocks/style.scss";
+
 @import "global";
-@import "test";
+@import "services";
+@import "modals";
+
+@import "header.scss";

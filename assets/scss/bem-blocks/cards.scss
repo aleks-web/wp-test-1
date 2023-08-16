@@ -1,0 +1,106 @@
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 297px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 25px 0px rgba(18, 75, 155, 0.2);
+
+    &:hover {
+        .card__img {
+            transform: scale(1.05);
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        width: 90%;
+        margin-bottom: 15px;
+
+        a {
+            transition: var(--speed-animation) all;
+            color: var(--black-color);
+
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+
+        &-elements {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4px;
+            min-height: 25px;
+        }
+    }
+
+    &__line {
+        height: 1px;
+        width: 50%;
+        background-color: var(--main-color);
+        margin-top: 3px;
+        transition: var(--speed-animation) all;
+    }
+
+    &__arrow {
+        width: 24px;
+        height: 24px;
+        transition: var(--speed-animation) all;
+    }
+
+    &__img {
+        height: 176px;
+        width: 297px;
+        background-image: url(../img/nature.png);
+        background-size: cover;
+        margin-bottom: 15px;
+        transition: var(--speed-animation) all;
+    }
+
+    &__content {
+        display: none;
+        padding: 0 32px 26px 32px;
+        transition: var(--speed-animation) all;
+    }
+
+    ul {
+        font-size: 17px;
+        margin-bottom: 8px;
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.card-has-child {
+    .card__arrow {
+        opacity: 1;
+        visibility: visible;
+    }
+    .card__line {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.card-open {
+    .card__arrow {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .card__line {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .card__content {
+        display: block;
+    }
+}

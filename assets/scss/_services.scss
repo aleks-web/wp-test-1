@@ -1,0 +1,9 @@
+.services {
+    margin-bottom: 60px;
+
+    &__items {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}

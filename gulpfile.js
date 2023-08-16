@@ -23,7 +23,7 @@ function styles() {
         .pipe(concat("style.css"))
         .pipe(
             autoprefixer({
-                overrideBrowserslist: ["last 10 version"],
+                overrideBrowserslist: ["last 5 version"],
             })
         )
         .pipe(dest(`${dir.css}`));

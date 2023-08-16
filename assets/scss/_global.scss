@@ -1,9 +1,54 @@
+@import "variables.scss";
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+
+    li {
+        display: flex;
+        align-items: baseline;
+    }
+
+    li:before {
+        content: "";
+        display: block;
+        min-width: 10px;
+        min-height: 10px;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
-    font-family: "Lato";
+    font-family: Nunito Sans, sans-serif;
+    font-size: 14px;
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.block-title {
+    display: block;
+    margin-bottom: 15px;
+
+    &__title {
+        font-size: 36px;
+        text-align: center;
+
+        span {
+            color: var(--main-color);
+        }
+    }
 }
