@@ -1,0 +1,21 @@
+.page {
+    min-height: 50vh;
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    &__content,
+    &__content p {
+        font-size: 22px;
+    }
+
+    &__content p {
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        margin-bottom: 20px;
+    }
+}

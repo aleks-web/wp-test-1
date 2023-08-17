@@ -1,0 +1,53 @@
+.footer {
+    background-color: #222;
+    padding: 50px 0;
+    color: white;
+    font-size: 20px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 30px;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            margin-bottom: 5px;
+        }
+
+        &-wrap {
+            display: flex;
+            gap: 15px;
+        }
+
+        &-link {
+            color: var(--main-color);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--speed-animation);
+
+            svg {
+                fill: var(--main-color);
+                width: 20px;
+                height: 20px;
+                transition: var(--speed-animation);
+            }
+
+            &:hover {
+                color: var(--main-color-2);
+            }
+        }
+    }
+}

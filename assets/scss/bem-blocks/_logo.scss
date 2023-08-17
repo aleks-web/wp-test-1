@@ -1,0 +1,35 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include media-breakpoint-down(lg) {
+        align-items: start;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        width: 188px;
+        height: auto;
+
+        @include media-breakpoint-down(lg) {
+            width: 150px;
+        }
+    }
+
+    &__name {
+        width: 229px;
+        font-size: 17px;
+        line-height: 23px;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 14px;
+        }
+    }
+}

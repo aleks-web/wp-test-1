@@ -1,5 +1,4 @@
-
-<!doctype html>
+<!DOCTYPE html>
     <html>
         <head>
             <meta charset="utf-8">
@@ -37,7 +36,7 @@
 
                             <div class="header-top__contacts">
                                 <a href="tel:37477533561" class="header-top__phone">+374 (77) 533 561</a>
-                                <a href="mailto:ladatravelarmenia@yandex.ru" class="header-top__email">ladatravelarmenia@yandex.ru</a>
+                                <a href="mailto:ladatravelarmenia@yandex.ru" class="header-top__email"><?= get_option('admin_email'); ?></a>
                             </div>
 
                             <a href="#" data-fancybox data-src="#order-call" class="btn header-top__btn">Заказать звонок</a>

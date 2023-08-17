@@ -1,0 +1,141 @@
+.form {
+    margin-bottom: 50px;
+
+    &__container {
+        padding: 80px 70px 50px 70px;
+        background-color: var(--main-color-3);
+        border-radius: 25px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 50px 20px 20px 20px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 30px 20px 20px 20px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            border-radius: unset;
+        }
+    }
+
+    &__title {
+        font-size: 34px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        margin-bottom: 60px;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 25px;
+        }
+
+        span {
+            color: var(--main-color);
+        }
+    }
+
+    &__col > p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        margin-top: 50px;
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 20px;
+        }
+
+        span {
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        background-color: var(--main-color-2);
+        transition: var(--speed-animation) all;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 18px;
+        color: var(--main-color-3);
+        height: 64px;
+        max-width: 200px;
+        padding: 0 30px;
+
+        @include media-breakpoint-down(sm) {
+            height: 50px;
+        }
+
+        &:hover {
+            background-color: var(--main-color);
+        }
+    }
+
+    &__input,
+    &__select,
+    &__date,
+    .wpcf7-select {
+        height: 64px;
+        border-radius: 100px;
+        padding: 0 25px;
+        border: none;
+
+        @include media-breakpoint-down(lg) {
+            height: 44px;
+        }
+    }
+
+    .wpcf7-select {
+        appearance: none;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+        background-repeat: no-repeat no-repeat;
+        background-size: 24px;
+        background-position: right 15px top 50%, 0 0;
+        padding-right: 50px;
+
+        &:after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            display: block;
+        }
+    }
+
+    .wpcf7-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__line p {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+
+        * {
+            width: 100%;
+        }
+    }
+
+    .wpcf7-not-valid-tip {
+        color: white;
+        margin-left: 25px;
+        margin-top: 3px;
+        font-size: 12px;
+        display: none;
+    }
+
+    .wpcf7-not-valid {
+        background-color: rgb(255, 214, 214);
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "alex/composer",
+    "autoload": {
+        "psr-4": {
+            "Alex\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
+    }
+}
