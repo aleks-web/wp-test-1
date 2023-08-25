@@ -21,13 +21,15 @@ $(function () {
 
     $(window).on("scroll", function () {
         if (window.pageYOffset > 300 && $.cookie("order-modal") == "true") {
-            $.fancybox.open({
-                src: "#order-modal",
-                type: "inline",
-                afterClose: function () {
-                    $.cookie("order-modal", "false", { expires: 7 });
-                },
-            });
+            if (!$("body").hasClass("fancybox-active")) {
+                $.fancybox.open({
+                    src: "#order-modal",
+                    type: "inline",
+                    afterClose: function () {
+                        $.cookie("order-modal", "false", { expires: 7 });
+                    },
+                });
+            }
         }
     });
 });

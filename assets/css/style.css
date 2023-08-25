@@ -3510,19 +3510,49 @@ body {
   background-color: #fff6f6;
 }
 
+.order-modal {
+  border-radius: 15px;
+  background-image: url(../img/phone.jpg) !important;
+  background-size: 100% 100% !important;
+  position: relative;
+  overflow: hidden;
+  min-width: 500px;
+}
+@media (max-width: 576px) {
+  .order-modal {
+    min-width: 300px !important;
+  }
+}
+.order-modal::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  opacity: 0.55;
+  z-index: 0;
+}
 .order-modal__title {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 100;
 }
 .order-modal__btn {
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: var(--main-color);
   width: 100%;
   color: white;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+  font-size: 18px;
+  position: relative;
+  z-index: 100;
 }
 .order-modal__btn:hover {
   background-color: var(--main-color-2);
@@ -3537,6 +3567,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
+  position: relative;
+  z-index: 100;
 }
 .order-modal__input input {
   position: relative;
@@ -3545,13 +3577,18 @@ body {
   background-size: 20px 20px;
   background-position: center left 10px;
   padding-left: 40px;
+  font-size: 18px;
 }
 .order-modal__input-phone input {
   background-image: url('data:image/svg+xml,<svg fill="%23f9a422" id="svg-tel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>');
   background-repeat: no-repeat no-repeat;
+  border-radius: 5px;
 }
 .order-modal__label {
-  font-size: 13px;
+  padding-left: 5px;
+  font-size: 18px;
+  position: relative;
+  z-index: 100;
 }
 
 .header-full {

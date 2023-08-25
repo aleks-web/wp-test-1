@@ -36,7 +36,7 @@
         <?php echo do_shortcode('[contact-form-7 id="260e104" title="Обратный звонок"]'); ?>
     </div>
 
-    <div id="order-modal" class="order-modal" style="display:none;min-width:500px;">
+    <div id="order-modal" class="order-modal" style="display:none;">
 
         <div class="order-modal__title">
             Заказать
