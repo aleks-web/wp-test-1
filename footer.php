@@ -35,5 +35,24 @@
 
         <?php echo do_shortcode('[contact-form-7 id="260e104" title="Обратный звонок"]'); ?>
     </div>
+
+    <div id="order-modal" class="order-modal" style="display:none;min-width:500px;">
+
+        <div class="order-modal__title">
+            Заказать
+        </div>
+
+        <form>
+
+            <div class="order-modal__input order-modal__input-phone">
+                <span class="order-modal__label">Ваш номер телефона:</span>
+
+                <input type="text" name="tel">
+            </div>
+
+            <button class="btn order-modal__btn">Заказать</button>
+
+        </form>
+    </div>
 </body>
 </html>
