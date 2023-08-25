@@ -39,7 +39,7 @@
                                 <a href="mailto:ladatravelarmenia@yandex.ru" class="header-top__email"><?= get_option('admin_email'); ?></a>
                             </div>
 
-                            <a href="#" data-fancybox data-src="#order-modal" class="btn header-top__btn">Заказать звонок</a>
+                            <a href="#" data-fancybox data-src="#order-call" class="btn header-top__btn">Заказать звонок</a>
 
                         </div>
                     </div>

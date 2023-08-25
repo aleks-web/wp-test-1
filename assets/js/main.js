@@ -13,6 +13,10 @@ $(function () {
         }
     });
 
+    $(".order-modal__btn").click(function (e) {
+        e.preventDefault();
+    });
+
     $(".order-modal__input-phone input").mask("+7 (999) 999-99-99", { placeholder: "+7 (xxx) xxx-xx-xx" });
 
     if ($.cookie("order-modal") == null) {
